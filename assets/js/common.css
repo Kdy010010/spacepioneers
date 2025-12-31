@@ -1,0 +1,22 @@
+html, body { margin:0; height:100%; background:#050814; color:#e5e7eb; }
+.wrap { position:relative; height:100%; display:flex; flex-direction:column; }
+header { padding:10px 12px; font:600 16px system-ui; }
+#game { width:100%; flex:1; display:block; touch-action:none; }
+
+#ui { position:fixed; left:0; right:0; bottom:0; height:140px; pointer-events:none; }
+.joy { position:absolute; left:18px; bottom:18px; pointer-events:auto; }
+.joyBase {
+  width:120px; height:120px; border-radius:999px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  position:relative;
+  touch-action:none;
+}
+.joyKnob {
+  width:56px; height:56px; border-radius:999px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.18);
+  position:absolute; left:50%; top:50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.03s linear;
+}
